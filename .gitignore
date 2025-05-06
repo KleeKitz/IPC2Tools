@@ -1,0 +1,23 @@
+# Editor settings
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# SCSS build artifacts
+*.css.map
+*.sass-cache/
+*.scssc
+
+# Logs and temp files
+*.log
+*.tmp
+
+# System files
+Thumbs.db
+
+# macOS
+.DS_Store
