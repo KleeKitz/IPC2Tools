@@ -137,6 +137,17 @@ export function generateComparisonForm(container, isEnchanted = false) {
                     (${adjustedInput.toFixed(2)} vs ${maxCrafted.toFixed(2)})
                 </span>`;
             resultContainer.appendChild(p);
+
+            if (adjustedInput > maxCrafted) {
+                const warning = document.createElement('p');
+                warning.style.color = '#ff4d4d';
+                warning.style.fontWeight = 'bold';
+                warning.style.marginTop = '8px';
+                warning.style.marginBottom = '10px';
+                warning.style.fontFamily = 'Arial';
+                warning.textContent = `⚠ Your value (${adjustedInput.toFixed(2)}) exceeds the expected max (${maxCrafted.toFixed(2)})!`;
+                resultContainer.appendChild(warning);
+            }
         });
     });
 }
