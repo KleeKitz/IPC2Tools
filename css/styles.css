@@ -1,0 +1,873 @@
+/* =======================================
+   Global Reset & Base Styles
+======================================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+select,
+option {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+td:not(:first-child) {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2b2b2b;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.margin-top-m {
+    display: block;
+    margin-top: 12px;
+}
+
+.margin-bottom-m {
+    margin-bottom: 12px;
+}
+
+.margin-bottom-l {
+    margin-bottom: 36px;
+}
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #666;
+    border: 2px solid #2b2b2b;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #fdc836;
+}
+
+/* =======================================
+   Layout
+======================================= */
+
+/* Mainbar */
+.mainbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    border-bottom: 1px solid #9c9c9ccc;
+    animation: fadeSlideDown 0.6s ease;
+}
+
+.mainbar h1 {
+    font-size: 24px;
+}
+
+.mainbar .version {
+    font-size: 14px;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+/* ===============================
+   Sidebar Icon + Label Support
+================================ */
+
+/* Sidebar Group Structure */
+.sidebar-group {
+    margin-bottom: 20px;
+}
+
+.sidebar .sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .sidebar-header,
+.sidebar .nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    font-size: 16px;
+    white-space: nowrap;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar-header:hover {
+    background-color: #444;
+}
+
+.sidebar .icon {
+    font-size: 18px;
+    min-width: 24px;
+    text-align: center;
+}
+
+.sidebar .label {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Collapse the labels and center icons when sidebar is collapsed */
+.sidebar.collapsed .label {
+    display: none !important;
+    position: absolute !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+}
+
+/* Ensure header and nav links center icons when collapsed */
+.sidebar.collapsed .sidebar-header,
+.sidebar.collapsed .nav-link {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidebar.collapsed .label {
+    display: none !important;
+}
+
+.sidebar.collapsed .nav-link,
+.sidebar.collapsed .sidebar-header {
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sidebar-header .arrow {
+    display: inline-block;
+    margin-left: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-header.expanded .arrow {
+    transform: rotate(90deg);
+}
+
+/* Tooltip when collapsed */
+.sidebar.collapsed .nav-link:hover::after,
+.sidebar.collapsed .sidebar-header:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 70px;
+    background-color: #222;
+    color: white;
+    padding: 6px 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    border-radius: 4px;
+    z-index: 999;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 85px;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+    overflow-y: auto;
+    animation: fadeSlideLeft 0.6s ease;
+    transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed+.container {
+    margin-left: 60px;
+}
+
+.sidebar h2,
+.sidebar h3 {
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.sidebar ul li a {
+    color: white;
+}
+
+.sidebar ul li a:hover {
+    color: #c6c1b9;
+}
+
+.sidebar-header {
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid transparent;
+    background-color: #2f2f2f;
+    color: #e0c341;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.sidebar-group {
+    background-color: #252525;
+}
+
+.sidebar-header:hover {
+    background-color: #3a3a3a;
+    color: #fdc836;
+}
+
+.sidebar-header.expanded {
+    background-color: #3f3f3f;
+    border-left-color: #fdc836;
+    color: #ffe674;
+}
+
+.sidebar-section {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
+    padding: 0 0.6rem;
+    visibility: hidden;
+}
+
+.sidebar-section.expanded {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.sidebar-section a {
+    display: block;
+    padding: 0.5rem 1rem;
+    border-left: 2px solid transparent;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+    color: #ccc;
+}
+
+.sidebar-section a:hover {
+    background-color: #333;
+    color: #fdc836;
+}
+
+.sidebar-section a.active {
+    background-color: #444;
+    border-left-color: #fdc836;
+    color: #ffe674;
+    font-weight: bold;
+}
+
+/* Main Container */
+.container {
+    margin-left: 300px;
+    margin-top: 90px;
+    padding: 20px;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 300px);
+    text-align: center;
+    transition: margin-left 0.3s ease;
+}
+
+.section {
+    padding-top: 24px;
+}
+
+.section-craft {
+    padding-top: 16px;
+    font-size: 24px;
+}
+
+/* =======================================
+   Components
+======================================= */
+
+/* Typography */
+h2,
+h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+.nav-link {
+    color: white;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #c3c3c3;
+}
+
+.active {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+/* Select Box */
+select {
+    padding: 5px 10px;
+    min-width: 150px;
+    max-width: 250px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+
+select:focus {
+    border-color: #fdc836;
+}
+
+/* Buttons */
+button,
+.craft-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    width: 120px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #363635;
+}
+
+.craft-button {
+    background-color: #444;
+    border: 1px solid #888;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.craft-button:hover {
+    background-color: #666;
+}
+
+.craft-button.active {
+    background-color: #e0c341;
+    color: #2a2a2a;
+    border: 2px solid #c9aa2d;
+    box-shadow: 0 0 10px 3px rgba(233, 203, 69, 0.6);
+    padding: 6px 12px;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 0 8px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-group > div > p {
+    margin: 12px 0 12px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #3a3a3a;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    min-height: 48px;
+    flex: 1 1 auto;
+    min-width: 160px;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin: 0;
+}
+
+.checkbox-group span {
+    flex: 1;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .checkbox-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group input {
+    width: 80px;
+}
+
+/* Collapsible Sections */
+.collapsible-header {
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+    background-color: #252525;
+    border: 3px solid #fdc836;
+    box-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 0 0 6px #e0c341;
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+#howItWorksHeader,
+#modifiersToApplyHeader {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.collapsible-header:hover {
+    color: #fdc836;
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 1rem;
+}
+
+.collapsible-content.expanded {
+    max-height: 1500px;
+    padding: 1rem;
+}
+
+.how-it-works-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Result Section */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Special Calculate Button */
+#calculateButton {
+    display: none;
+    font-size: 16px;
+}
+
+#calculateButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Pixelated theme button */
+.pixel-button {
+    background-color: #2a2a2a;
+    color: #fdc836;
+    font-family: 'Pixelify Sans', monospace;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 3px solid #c9aa2d;
+    box-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        0 0 6px #e0c341;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pixel-button:hover {
+    background-color: #3b3b3b;
+    color: #fff5cc;
+    box-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        0 0 10px #fdc836;
+}
+
+.pixel-button:active {
+    transform: translateY(2px);
+    box-shadow:
+        1px 1px 0 #000,
+        -1px -1px 0 #000,
+        0 0 4px #c9aa2d inset;
+}
+
+/* Crafting Mods Section */
+#craftingModsSection>div {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#craftingModsSection input,
+#craftingModsSection select {
+    width: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: #444;
+    color: white;
+    border: 1px solid #888;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#craftingModsSection label {
+    font-size: 14px;
+    margin-top: 20px;
+    color: white;
+}
+
+#craftGenreButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#craftGenreButtons .pixel-button {
+    min-width: 170px;
+    text-align: center;
+}
+
+#craftingModsSection>label {
+    display: block;
+    padding: 20px 0 8px 0;
+}
+
+/* Results Table */
+#specialRulesMessage {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    gap: 8px;
+}
+
+#resultsTableContainer {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 40px;
+    overflow-x: auto;
+    padding-bottom: 40px;
+}
+
+#resultsTable {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#resultsTable th,
+#resultsTable td {
+    border: 1px solid #ddd;
+    padding: 12px 14px;
+    text-align: center;
+}
+
+#resultsTable th {
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+}
+
+#resultsTable td {
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+}
+
+.compare-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.option-box {
+    background-color: #1e1e1e; /* dark theme */
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    flex: 1 1 200px; /* responsive growth */
+    min-width: 160px;
+    max-width: 500px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.option-box p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#compareButton {
+    display: block;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+/* Comparison section */
+#nonEnchantedSection,
+#enchantedSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#nonEnchantedSection > div,
+#enchantedSection > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#nonEnchantedSection > p,
+#enchantedSection > p {
+    padding: 12px 0 12px 0;
+}
+
+#nonEnchantedSection > select,
+#enchantedSection > select {
+    margin: 8px 0 8px 0;
+}
+
+#nonEnchantedSection input,
+#enchantedSection input {
+    width: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: #444;
+    color: white;
+    border: 1px solid #888;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* =======================================
+   Animations
+======================================= */
+@keyframes fadeSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        z-index: 2;
+        padding-top: 85px;
+    }
+
+    .container {
+        position: relative;
+        margin-left: 0;
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+
+    .mainbar {
+        padding: 10px 25px;
+    }
+
+    .mainbar h1 {
+        font-size: 22px;
+    }
+
+    .mainbar .pixel-button {
+        padding: 12px 15px;
+        width: unset;
+    }
+
+    .container {
+        width: calc(100% - 90px);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .mainbar {
+        padding: 5px 10px;
+    }
+
+    .mainbar .pixel-button {
+        padding: 5px;
+        width: unset;
+    }
+
+    .mainbar h1 {
+        font-size: 14px;
+    }
+
+    .mainbar .version {
+        font-size: 10px;
+    }
+
+    .container {
+        width: calc(100% - 50px);
+    }
+
+    #howItWorksHeader,
+    #modifiersToApplyHeader {
+        width: unset;
+    }
+}

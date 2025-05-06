@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Pocket Crafter 2 Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="module" src="../js/main/main.js" defer></script>
+    <script type="module" src="../js/modsCalc/index.js" defer></script>
+</head>
+
+<body>
+    <!-- Mainbar -->
+    <header class="mainbar">
+        <!-- Toggle -->
+        <button class="pixel-button" id="sidebarToggle" title="Toggle Menu">
+            🛠
+        </button>
+        <a href="/">
+            <h1>Idle Pocket Crafter 2 Tools</h1>
+        </a>
+        <span class="version">Version : 0.1</span>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <!-- Calculators Section -->
+        <div class="sidebar-group">
+            <div id="calculators-header" class="sidebar-header" title="Calculators" data-tooltip="Calculators">
+                <span class="icon">🧮</span>
+                <span class="label">Calculators <span class="arrow">▶</span></span>
+            </div>
+            <ul id="calculators" class="sidebar-section">
+                <li>
+                    <a href="./modsCalculator.html" class="nav-link" title="Mods Calculator"
+                        data-tooltip="Mods Calculator">
+                        <span class="icon">📊</span>
+                        <span class="label">Modifiers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./prestigeCalculator.html" class="nav-link" title="Prestige Calculator"
+                        data-tooltip="Prestige Calculator">
+                        <span class="icon">💎</span>
+                        <span class="label">Prestige</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Resources Section -->
+        <div class="sidebar-group">
+            <div id="resources-header" class="sidebar-header" title="Resources" data-tooltip="Resources">
+                <span class="icon">📚</span>
+                <span class="label">Resources <span class="arrow">▶</span></span>
+            </div>
+            <ul id="resources" class="sidebar-section">
+                <li>
+                    <a href="#" class="nav-link" title="Placeholder" data-tooltip="Placeholder">
+                        <span class="icon">📄</span>
+                        <span class="label">Placeholder</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Mod Calculator</h2>
+
+        <!-- How it works section -->
+        <div class="section">
+            <h3 id="howItWorksHeader" class="collapsible-header">How it works ▼</h3>
+            <div id="howItWorksContent" class="collapsible-content">
+                <ol class="how-it-works-list">
+                    <li>1. Choose modifiers you want to apply.</li>
+                    <li>2. Select the craft genre using the buttons.</li>
+                    <li>3. Pick your display option (stat, prefix, suffix, or both).</li>
+                    <li>4. Check the available modifiers list below. (maximum 2 mods)</li>
+                    <li>5. Use the results for optimizing your crafts!</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Modifiers to apply section -->
+        <div class="section">
+            <h3 id="modifiersToApplyHeader" class="collapsible-header">Modifiers to apply ▼</h3>
+            <div id="modifiersToApplyContent" class="collapsible-content">
+                <div class="checkbox-group column">
+                    <div>
+                        <p>IAP bonuses</p>
+                        <div class="sub-checkbox-group">
+                            <label><input type="checkbox" id="smith20" /> Smith (level 20 passive)</label>
+                            <label><input type="checkbox" id="smith40" /> Smith (level 40 passive)</label>
+                            <label><input type="checkbox" id="craftingHyperBundle" /> Crafting hyper bundle</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p>General bonuses</p>
+                        <div class="sub-checkbox-group">
+                            <label><input type="checkbox" id="craftingPrestige" /> Crafting prestige</label>
+                            <label><input type="checkbox" id="craftingModsEquipped" /> Crafting mods equipped</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Special craftings</p>
+                        <div class="sub-checkbox-group">
+                            <label><input type="checkbox" id="eventCrafting" /> Event crafting</label>
+                            <label><input type="checkbox" id="glowingCrafting" /> Glowing crafting</label>
+                            <label><input type="checkbox" id="qualitySmithing" /> Quality smithing</label>
+                            <label><input type="checkbox" id="holySmithing" /> Holy smithing</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="crafterModExtras">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Select craft genre section -->
+        <div class="section">
+            <h3 class="section-craft">Select the craft genre</h3>
+            <div id="craftGenreButtons" class="craft-genre-buttons">
+                <button class="craft-button pixel-button active" data-genre="Tool">🪓 Tool</button>
+                <button class="craft-button pixel-button" data-genre="Armor">🛡 Armor</button>
+                <button class="craft-button pixel-button" data-genre="Jewellery">💍 Jewellery</button>
+                <button class="craft-button pixel-button" data-genre="Trinkets">✨ Trinkets</button>
+            </div>
+            <label class="margin-top-m">
+                <input type="checkbox" id="exclusiveModifiersToggle">
+                Only show exclusive modifiers
+            </label>
+        </div>
+
+        <!-- Display Options -->
+        <div class="section">
+            <h3>Display Option</h3>
+            <select id="displayMode">
+                <option value="stat">Show Stat</option>
+                <option value="prefix">Show Prefix</option>
+                <option value="suffix">Show Suffix</option>
+                <option value="both">Show Prefix / Suffix</option>
+            </select>
+        </div>
+
+        <!-- Generated Modifiers Section -->
+        <div id="modifiers-section" class="section">
+            <h3>Select Mods</h3>
+            <div id="modifiers-list" class="checkbox-group margin-bottom-l"></div>
+            <button id="calculateButton" class="pixel-button margin-top-m">Calculate</button>
+        </div>
+
+        <!-- Results Table -->
+        <div id="resultsTableContainer" class="section hidden">
+            <h2>Calculated Values</h2>
+            <div id="specialRulesMessage"></div>
+            <table id="resultsTable" class="results-table">
+                <thead>
+                    <tr>
+                        <th data-label="Stat">Stat</th>
+                        <th data-label="Common">Common</th>
+                        <th data-label="Uncommon">Uncommon</th>
+                        <th data-label="Rare">Rare</th>
+                        <th data-label="Epic">Epic</th>
+                        <th data-label="Legendary">Legendary</th>
+                        <th data-label="Exalted">Exalted</th>
+                        <th data-label="Mythic">Mythic</th>
+                        <th data-label="Godly">Godly</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <button id="compareButton" class="pixel-button">I want to compare</button>
+        </div>
+
+        <div id="compareSection" class="section hidden">
+            <h2>Comparing your gear to the results</h2>
+
+            <div id="buttonOptions" class="compare-options">
+                <div class="option-box">
+                    <p>I use a normal item</p>
+                    <button id="nonEnchantedButton" class="pixel-button">Select</button>
+                </div>
+                <div class="option-box">
+                    <p>I use an enchanted item</p>
+                    <button id="enchantedButton" class="pixel-button">Select</button>
+                </div>
+            </div>
+
+            <div id="nonEnchantedSection" class="section hidden">
+                <!-- Content for non enchanted comparison -->
+            </div>
+            <div id="enchantedSection" class="section hidden">
+                <!-- Content for enchanted comparison -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
