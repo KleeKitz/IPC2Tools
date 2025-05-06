@@ -85,10 +85,10 @@ export function generateComparisonForm(container, isEnchanted = false) {
         const rarityIndex = rarityLabels.indexOf(selectedRarity);
 
         const tierReduction = isEnchanted ? {
-            T2: 0.05,
-            T3: 0.10,
-            T4: 0.15,
-            T5: 0.20
+            T2: 0.10,
+            T3: 0.15,
+            T4: 0.20,
+            T5: 0.25
         }[enchantmentSelect.value] || 0 : 0;
 
         selected.forEach(modPrefix => {
