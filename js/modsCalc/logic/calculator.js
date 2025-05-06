@@ -59,7 +59,7 @@ export function calculateValues() {
     document.getElementById("resultsTableContainer").style.display = "block";
 }
 
-function getCraftingMultiplier() {
+export function getCraftingMultiplier() {
     let totalBonus = 0;
 
     for (const id in craftingBonusCheckboxIds) {

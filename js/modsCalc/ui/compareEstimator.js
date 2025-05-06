@@ -1,12 +1,13 @@
 import { getSelectedMods } from './selectionManager.js';
 import { modifiersData } from '../data/modifiersLoader.js';
-import { rarityLabels } from '../data/constants.js';
+import { rarityLabels, specialModRules } from '../data/constants.js';
+import { getCraftingMultiplier } from '../logic/calculator.js';
 
 export function generateComparisonForm(container, isEnchanted = false) {
     const selected = getSelectedMods();
     if (selected.length === 0) return;
 
-    container.innerHTML = ''; // clear previous
+    container.innerHTML = '';
     const title = document.createElement('p');
     title.textContent = "What kind of gear rarity do you use?";
     container.appendChild(title);
@@ -20,7 +21,6 @@ export function generateComparisonForm(container, isEnchanted = false) {
     });
     container.appendChild(raritySelect);
 
-    // Optional: Enchantment tier
     let enchantmentTitle, enchantmentSelect;
     if (isEnchanted) {
         enchantmentTitle = document.createElement('p');
@@ -37,7 +37,6 @@ export function generateComparisonForm(container, isEnchanted = false) {
         container.appendChild(enchantmentSelect);
     }
 
-    // Mod inputs
     selected.forEach((mod, index) => {
         const wrapper = document.createElement('div');
         wrapper.style.display = 'flex';
@@ -83,6 +82,7 @@ export function generateComparisonForm(container, isEnchanted = false) {
         resultContainer.innerHTML = '';
         const selectedRarity = raritySelect.value;
         const rarityIndex = rarityLabels.indexOf(selectedRarity);
+        const rarityMultiplier = 1 + (rarityIndex * 0.4);
 
         const tierReduction = isEnchanted ? {
             T2: 0.10,
@@ -90,6 +90,8 @@ export function generateComparisonForm(container, isEnchanted = false) {
             T4: 0.20,
             T5: 0.25
         }[enchantmentSelect.value] || 0 : 0;
+
+        const craftingMultiplier = getCraftingMultiplier();
 
         selected.forEach(modPrefix => {
             const modData = modifiersData.modifiers.find(mod => mod.prefix === modPrefix);
@@ -99,28 +101,40 @@ export function generateComparisonForm(container, isEnchanted = false) {
             const userValue = parseFloat(input.value);
             if (isNaN(userValue)) return;
 
-            const rule = modData.rule || {};
+            const rule = specialModRules[modPrefix] || {};
             const baseMax = modData.rarity[9];
-            const multiplier = 1 + (rarityIndex * 0.4);
-            const craftedMax = (rule.skipCraftingMultiplier ? baseMax : baseMax) * multiplier;
+
+            let maxCrafted;
+
+            if (rule.overrideMultipliers && typeof rule.apply === "function") {
+                const fixed = rule.apply();
+                maxCrafted = fixed.max;
+            } else {
+                maxCrafted = rule.skipCraftingMultiplier ? baseMax : baseMax * craftingMultiplier;
+                maxCrafted *= rarityMultiplier;
+
+                if (rule.cap) {
+                    maxCrafted = Math.min(maxCrafted, rule.cap);
+                }
+            }
 
             const adjustedInput = userValue * (1 - tierReduction);
-            const percentage = Math.min(100, (adjustedInput / craftedMax) * 100);
+            const percentage = Math.min(100, (adjustedInput / maxCrafted) * 100);
             const percentageText = percentage.toFixed(2);
 
             let color = 'white';
-            if (percentage <= 25) color = '#e74c3c';       // red
-            else if (percentage <= 50) color = '#e67e22';  // orange
-            else if (percentage <= 74) color = '#f1c40f';  // yellow
-            else if (percentage <= 89) color = '#2ecc71';  // light green
-            else color = '#27ae60';                        // green
+            if (percentage <= 25) color = '#e74c3c';
+            else if (percentage <= 50) color = '#e67e22';
+            else if (percentage <= 74) color = '#f1c40f';
+            else if (percentage <= 89) color = '#2ecc71';
+            else color = '#27ae60';
 
             const p = document.createElement('p');
             p.innerHTML = `
                 <strong style="font-family: Arial;">${modPrefix}:</strong>
                 <span style="color: ${color}; font-family: Arial;">
                     ${percentageText}% of max
-                    (${adjustedInput.toFixed(2)} vs ${craftedMax.toFixed(2)})
+                    (${adjustedInput.toFixed(2)} vs ${maxCrafted.toFixed(2)})
                 </span>`;
             resultContainer.appendChild(p);
         });
