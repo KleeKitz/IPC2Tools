@@ -871,3 +871,21 @@ button:hover {
         width: unset;
     }
 }
+
+/* dirty css for the prestige page, cleaning post prestige update */
+.form-list form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.section #result {
+    margin-bottom: 32px;
+}
+#prestigeOutput, #prestigeShortOutput, 
+#prestigeOutputHardMode, #prestigeShortOutputHardMode {
+    font-family: Arial, sans-serif;
+}

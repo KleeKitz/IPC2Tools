@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <script type="module" src="../js/main/main.js" defer></script>
+    <script type="module" src="../js/prestigeCalc/index.js" defer></script>
 </head>
 
 <body>
@@ -66,8 +67,57 @@
 
     <!-- Main Content -->
     <div class="container">
-        <h2>Unsupported section currently (WIP)</h2>
+        <h2>Prestige Calculator</h2>
         <div class="section">
+    
+            <!-- Prestige Percentage Input -->
+            <form id="prestige-form">
+                <label for="prestigePercentage">Prestige %</label>
+                <input type="number" id="prestigePercentage" name="prestigePercentage" step="0.01" min="0" placeholder="e.g., 1250.75">
+                <p class="info-text">To obtain the percentage you have to head into: <br> Misc &gt; Stats &gt; Prestige</p>
+            </form>
+        </div>
+        <div class="section form-list">
+            <!-- Upgrade Levels -->
+            <h2>Upgrade levels</h2>
+            <form id="upgrade-form">
+                <label for="universalSpeed">Universal Speed</label>
+                <input type="number" id="universalSpeed" name="universalSpeed" min="0">
+    
+                <label for="universalDamage">Universal Damage</label>
+                <input type="number" id="universalDamage" name="universalDamage" min="0">
+    
+                <label for="pickaxeHandling">Pickaxe Handling</label>
+                <input type="number" id="pickaxeHandling" name="pickaxeHandling" min="0">
+    
+                <label for="oreKnowledge">Ore Knowledge</label>
+                <input type="number" id="oreKnowledge" name="oreKnowledge" min="0">
+    
+                <label for="axeHandling">Axe Handling</label>
+                <input type="number" id="axeHandling" name="axeHandling" min="0">
+    
+                <label for="lumberKnowledge">Lumber Knowledge</label>
+                <input type="number" id="lumberKnowledge" name="lumberKnowledge" min="0">
+    
+                <label for="swordHandling">Sword Handling</label>
+                <input type="number" id="swordHandling" name="swordHandling" min="0">
+    
+                <label for="enemyKnowledge">Enemy Knowledge</label>
+                <input type="number" id="enemyKnowledge" name="enemyKnowledge" min="0">
+            </form>
+        </div>
+        <div class="section">
+            <div id="result">
+                <h2>Total prestige gain</h2>
+                <p id="prestigeShortOutput">-Result-</p>
+                <p id="prestigeOutput">-Result-</p>
+            </div>            
+
+            <div id="result-hardmode">
+                <h2>Prestige gain in hard mode</h2>
+                <p id="prestigeShortOutputHardMode">-Result-</p>
+                <p id="prestigeOutputHardMode">-Result-</p>
+            </div>
         </div>
     </div>
 </body>
