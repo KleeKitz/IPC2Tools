@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     autoExpandSectionFromActiveLink();
 
     // Event listeners
+    document.getElementById('index-header')?.addEventListener('click', () => document.location.href = "/");
     document.getElementById('calculators-header')?.addEventListener('click', () => toggleSection('calculators'));
     document.getElementById('resources-header')?.addEventListener('click', () => toggleSection('resources'));
     document.getElementById('sidebarToggle')?.addEventListener('click', sidebarToggle);
