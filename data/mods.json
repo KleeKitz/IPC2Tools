@@ -4,163 +4,460 @@
       "stat": "More ores",
       "prefix": "Miner's",
       "suffix": "of the Miner",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "More wood",
       "prefix": "Lumberjack's",
       "suffix": "of the Lumberjack",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "More leather",
       "prefix": "Tanner's",
       "suffix": "of the Tanner",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "More ores, wood & leather",
       "prefix": "Wealthy",
       "suffix": "of the Wealth",
-      "rarity": [2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25]
+      "rarity": [
+        2.5,
+        5,
+        7.5,
+        10,
+        12.5,
+        15,
+        17.5,
+        20,
+        22.5,
+        25
+      ]
     },
     {
       "stat": "Damage against ores",
       "prefix": "Prospector",
       "suffix": "of the Prospector",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "Damage against trees",
       "prefix": "Logger's",
       "suffix": "of the Logger",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "Damage against enemies",
       "prefix": "Hunter's",
       "suffix": "of the Hunter",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "Damage against resources",
       "prefix": "Mighty",
       "suffix": "of the Might",
-      "rarity": [2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25]
+      "rarity": [
+        2.5,
+        5,
+        7.5,
+        10,
+        12.5,
+        15,
+        17.5,
+        20,
+        22.5,
+        25
+      ]
     },
     {
       "stat": "Ore trading power",
       "prefix": "Ore Trader",
       "suffix": "of the Ore Trading",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "Lumber trading power",
       "prefix": "Lumber Trader",
       "suffix": "of the Lumber Trading",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "Leather trading power",
       "prefix": "Leather Trader",
       "suffix": "of the Leather Trading",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "All trading power",
       "prefix": "Trader's",
       "suffix": "of the Trader",
-      "rarity": [2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25]
+      "rarity": [
+        2.5,
+        5,
+        7.5,
+        10,
+        12.5,
+        15,
+        17.5,
+        20,
+        22.5,
+        25
+      ]
     },
     {
-      "stat": "winging speed",
+      "stat": "Swinging speed",
       "prefix": "Hasty",
       "suffix": "of Haste",
-      "rarity": [2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25]
+      "rarity": [
+        2.5,
+        5,
+        7.5,
+        10,
+        12.5,
+        15,
+        17.5,
+        20,
+        22.5,
+        25
+      ]
     },
     {
       "stat": "Damage in daily mine",
       "prefix": "Daily",
       "suffix": "of the Daily",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "Damage against guards",
       "prefix": "Guardbearer",
       "suffix": "of the Guardbearer",
-      "rarity": [2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25]
+      "rarity": [
+        2.5,
+        5,
+        7.5,
+        10,
+        12.5,
+        15,
+        17.5,
+        20,
+        22.5,
+        25
+      ]
     },
     {
       "stat": "Chance to negate damage",
       "prefix": "Protector",
       "suffix": "of the Protector",
-      "rarity": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+      "rarity": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
     },
     {
       "stat": "Regenerate health",
       "prefix": "Troll's",
       "suffix": "of the Troll",
-      "rarity": [1, 1, 2, 3, 3, 3, 4, 4, 5, 5]
+      "rarity": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5
+      ]
     },
     {
       "stat": "More range",
       "prefix": "Reacher's",
       "suffix": "of the Reach",
-      "rarity": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      "rarity": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
     },
     {
       "stat": "Better material loot chance",
       "prefix": "Looter",
       "suffix": "of the Loot",
-      "rarity": [1, 1, 2, 3, 4, 4, 5, 5, 5, 5]
+      "rarity": [
+        1,
+        1,
+        2,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5
+      ]
     },
     {
       "stat": "More amber from chest",
       "prefix": "Gemcutter",
       "suffix": "of the Gemcutter",
-      "rarity": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+      "rarity": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
     },
     {
       "stat": "Prestige currency",
       "prefix": "Potent",
       "suffix": "of the Potency",
-      "rarity": [1, 1, 2, 3, 4, 5, 5, 5, 5, 5]
+      "rarity": [
+        1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
     },
     {
       "stat": "Trading yield more coins",
       "prefix": "Rich",
       "suffix": "of the Riches",
-      "rarity": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      "rarity": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
     },
     {
       "stat": "Mana regeneration",
       "prefix": "Wizard's",
       "suffix": "of the Wizard",
-      "rarity": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+      "rarity": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1
+      ]
     },
     {
       "stat": "More experience",
       "prefix": "Experience",
       "suffix": "of the Experience",
-      "rarity": [1, 1, 2, 3, 4, 4, 5, 5, 5, 5]
+      "rarity": [
+        1,
+        1,
+        2,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5
+      ]
     },
     {
       "stat": "Critical hit chance",
       "prefix": "Precise",
       "suffix": "of the Precision",
-      "rarity": [1, 1, 2, 3, 4, 4, 5, 5, 5, 5]
+      "rarity": [
+        1,
+        1,
+        2,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5
+      ]
     },
     {
       "stat": "Critical income chance",
       "prefix": "Gambler's",
       "suffix": "of the Gambling",
-      "rarity": [1, 1, 2, 3, 4, 4, 5, 5, 5, 5]
+      "rarity": [
+        1,
+        1,
+        2,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5
+      ]
     },
     {
       "stat": "More stats on craft",
       "prefix": "Crafter's",
       "suffix": "of the Crafting",
-      "rarity": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+      "rarity": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1
+      ]
     }
   ]
 }

@@ -1,475 +1,617 @@
 {
-    "shop" : [
+    "shop": [
         {
             "name": "Freebie Bundle",
-            "reward": ["Free chest: 2x faster timer",
-            "75 amber",
-            "10 artifact chest"],
+            "reward": [
+                "Free chest: 2x faster timer",
+                "75 amber",
+                "10 artifact chest"
+            ],
             "type": "IAP"
         },
         {
-            "name": "Ressource Bundle",
-            "reward": ["2x more ressources",
-                        "Free chest: +4% artifact chance",
-                        "400 amber",
-                        "20 artifact chest"],
+            "name": "Resource Bundle",
+            "reward": [
+                "2x more resources",
+                "Free chest: +4% artifact chance",
+                "400 amber",
+                "20 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Goodie Bundle",
-            "reward": ["Crafting chest: 4x faster",
-                        "Alchemy chest: 4x faster",
-                        "Curio chest: 4x faster",
-                        "800 amber"],
+            "reward": [
+                "Crafting chest: 4x faster",
+                "Alchemy chest: 4x faster",
+                "Curio chest: 4x faster",
+                "800 amber"
+            ],
             "type": "IAP"
         },
         {
             "name": "Automation Bundle",
-            "reward": ["Autogather: +40% attack speed",
-                        "1350 amber",
-                        "50 artifact chest"],
+            "reward": [
+                "Autogather: +40% attack speed",
+                "1350 amber",
+                "50 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Investment Bundle",
-            "reward": ["Free chest: 1% for 200 ambers",
-            "Free chest: 20% for artifact chest",
-            "1800 amber",
-            "50 artifact chest"],
+            "reward": [
+                "Free chest: 1% for 200 ambers",
+                "Free chest: 20% for artifact chest",
+                "1800 amber",
+                "50 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Retirement Mega Bundle",
-            "reward": ["1.5x prestige currency",
-            "2400 amber",
-            "50 artifact chest",
-            "1 exalted chest"],
+            "reward": [
+                "1.5x prestige currency",
+                "2400 amber",
+                "50 artifact chest",
+                "1 exalted chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Automation Mega Bundle",
-            "reward": ["Autogather: 2x floors",
-            "2900 amber",
-            "50 artifact chest",
-            "1 exalted chest"],
+            "reward": [
+                "Autogather: 2x floors",
+                "2900 amber",
+                "50 artifact chest",
+                "1 exalted chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Material Hyper Bundle",
-            "reward": ["+50 cap common materials",
-            "+10% material drop rates",
-            "3200 amber",
-            "+50 all common materials"],
+            "reward": [
+                "+50 cap common materials",
+                "+10% material drop rates",
+                "3200 amber",
+                "+50 all common materials"
+            ],
             "type": "IAP"
         },
         {
             "name": "Herbal Hyper Bundle",
-            "reward": ["+3 more herb spawn",
-            "3500 amber",
-            "+10 all legendary herb",
-            "+10 all mythic herb"],
+            "reward": [
+                "+3 more herb spawn",
+                "3500 amber",
+                "+10 all legendary herb",
+                "+10 all mythic herb"
+            ],
             "type": "IAP"
         },
         {
             "name": "Crafting Hyper Bundle",
-            "reward": ["+20% better stats for new equipements",
-            "3900 amber",
-            "150 artifact chest"],
+            "reward": [
+                "+20% better stats for new equipments",
+                "3900 amber",
+                "150 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Ace Bundle",
-            "reward": ["Pet: Ace",
-            "150 amber",
-            "10 artifact chest"],
+            "reward": [
+                "Pet: Ace",
+                "150 amber",
+                "10 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Mr. Surf Bundle",
-            "reward": ["Pet: Mr. Surf",
-            "750 amber",
-            "30 artifact chest"],
+            "reward": [
+                "Pet: Mr. Surf",
+                "750 amber",
+                "30 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Pinkie Bundle",
-            "reward": ["Pet: Pinkie",
-            "1200 amber",
-            "1 exalted artifact chest"],
+            "reward": [
+                "Pet: Pinkie",
+                "1200 amber",
+                "1 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Fluffy Mega Bundle",
-            "reward": ["Pet: Fluffy",
-            "1600 amber",
-            "50 artifact chest",
-            "20 mana gem"],
+            "reward": [
+                "Pet: Fluffy",
+                "1600 amber",
+                "50 artifact chest",
+                "20 mana gem"
+            ],
             "type": "IAP"
         },
         {
             "name": "Event Bundle",
-            "reward": ["Pet: Nugget",
-            "1100 amber",
-            "100 artifact chest",
-            "1 exalted artifact chest"],
+            "reward": [
+                "Pet: Nugget",
+                "1100 amber",
+                "100 artifact chest",
+                "1 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Supporter's Mega Bundle",
-            "reward": ["+25% more event currency",
-            "+5% better stats for new equipements",
-            "+50 max mana",
-            "-1min free chest",
-            "+1 Banked Free Chest",
-            "+6 hours Time Fragment offline cap",
-            "1650 amber",
-            "100 artifact chest",
-            "2 exalted artifact chest"],
+            "reward": [
+                "+25% more event currency",
+                "+5% better stats for new equipments",
+                "+50 max mana",
+                "-1min free chest",
+                "+1 Banked Free Chest",
+                "+6 hours Time Fragment offline cap",
+                "1650 amber",
+                "100 artifact chest",
+                "2 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Epic Supporter's Mega Bundle",
-            "reward": ["+5% pet XP",
-            "+10% material drop rates",
-            "+5% better stats for new equipements",
-            "+50 max mana",
-            "-1min free chest",
-            "+1 Banked Free Chest",
-            "+1 mystery box daily limit",
-            "2900 amber",
-            "200 artifact chest",
-            "5 exalted artifact chest"],
+            "reward": [
+                "+5% pet XP",
+                "+10% material drop rates",
+                "+5% better stats for new equipments",
+                "+50 max mana",
+                "-1min free chest",
+                "+1 Banked Free Chest",
+                "+1 mystery box daily limit",
+                "2900 amber",
+                "200 artifact chest",
+                "5 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Mythic Supporter's Mega Bundle",
-            "reward": ["+5% pet XP",
-            "+10% material drop rates",
-            "+5% better stats for new equipements",
-            "+50 max mana",
-            "-1min free chest",
-            "+2 Banked Free Chest",
-            "+6 hours Time Fragment offline cap",
-            "3900 amber",
-            "300 artifact chest",
-            "8 exalted artifact chest"],
+            "reward": [
+                "+5% pet XP",
+                "+10% material drop rates",
+                "+5% better stats for new equipments",
+                "+50 max mana",
+                "-1min free chest",
+                "+2 Banked Free Chest",
+                "+6 hours Time Fragment offline cap",
+                "3900 amber",
+                "300 artifact chest",
+                "8 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Devoted Supporter's Mega Bundle",
-            "reward": ["+1 mythic herb daily cap",
-            "+20% award chance",
-            "2x material cap",
-            "Autogather: 2x floors",
-            "+5% better stats for new equipements",
-            "+3 Banked Free Chest",
-            "4500 amber",
-            "400 artifact chest",
-            "10 exalted artifact chest"],
+            "reward": [
+                "+1 mythic herb daily cap",
+                "+20% award chance",
+                "2x material cap",
+                "Autogather: 2x floors",
+                "+5% better stats for new equipments",
+                "+3 Banked Free Chest",
+                "4500 amber",
+                "400 artifact chest",
+                "10 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Time Crate",
-            "reward": ["2x more offline Time Fragment",
-            "+1 mystery box daily limit",
-            "720 amber",
-            "25 mana gem"],
+            "reward": [
+                "2x more offline Time Fragment",
+                "+1 mystery box daily limit",
+                "720 amber",
+                "25 mana gem"
+            ],
             "type": "IAP"
         },
         {
             "name": "Event Crafting Bundle",
-            "reward": ["Half Event Currency cost for pristine material",
-            "400 amber",
-            "30 artifact chest"],
+            "reward": [
+                "Half Event Currency cost for pristine material",
+                "400 amber",
+                "30 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Eventvore Bundle",
-            "reward": ["2x XP for eventvore",
-            "850 amber",
-            "20 all pristine materials"],
+            "reward": [
+                "2x XP for eventvore",
+                "850 amber",
+                "20 all pristine materials"
+            ],
             "type": "IAP"
         },
         {
             "name": "Fishing Bundle",
-            "reward": ["-1min bait regen",
-            "+10 fish bait cap",
-            "400 amber",
-            "20 artifact chest"],
+            "reward": [
+                "-1min bait regen",
+                "+10 fish bait cap",
+                "400 amber",
+                "20 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Master Angler Bundle",
-            "reward": ["+25% fish catch rate",
-            "+20 fich bait cap",
-            "850 amber",
-            "30 artifact chest"],
+            "reward": [
+                "+25% fish catch rate",
+                "+20 fish bait cap",
+                "850 amber",
+                "30 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Duplicator",
-            "reward": ["Allow duplicator on equipment",
-            "225 amber"],
+            "reward": [
+                "Allow duplicator on equipment",
+                "225 amber"
+            ],
             "type": "IAP"
         },
         {
             "name": "Sopala Island Bundle",
-            "reward": ["100 amber",
-            "10 artifact chest"],
+            "reward": [
+                "100 amber",
+                "10 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Flooded Mine Bundle",
-            "reward": ["300 amber",
-            "20 artifact chest"],
+            "reward": [
+                "300 amber",
+                "20 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Shipwreck Island Bundle",
-            "reward": ["500 amber",
-            "30 artifact chest"],
+            "reward": [
+                "500 amber",
+                "30 artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Invaded Laboratory Bundle",
-            "reward": ["700 amber",
-            "40 artifact chest",
-            "1 exalted artifact chest"],
+            "reward": [
+                "700 amber",
+                "40 artifact chest",
+                "1 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Bizarre Island Bundle",
-            "reward": ["900 amber",
-            "50 artifact chest",
-            "1 exalted artifact chest"],
+            "reward": [
+                "900 amber",
+                "50 artifact chest",
+                "1 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Stay Out!",
-            "reward": ["1210 amber",
-            "60 artifact chest",
-            "2 exalted artifact chest"],
+            "reward": [
+                "1210 amber",
+                "60 artifact chest",
+                "2 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Very Deep Cave Bundle",
-            "reward": ["1430 amber",
-            "70 artifact chest",
-            "2 exalted artifact chest"],
+            "reward": [
+                "1430 amber",
+                "70 artifact chest",
+                "2 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Green Meadow Bundle",
-            "reward": ["1650 amber",
-            "80 artifact chest",
-            "2 exalted artifact chest"],
+            "reward": [
+                "1650 amber",
+                "80 artifact chest",
+                "2 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Dormant Mine Bundle",
-            "reward": ["1870 amber",
-            "90 artifact chest",
-            "3 exalted artifact chest"],
+            "reward": [
+                "1870 amber",
+                "90 artifact chest",
+                "3 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Prehistoric Cave Bundle",
-            "reward": ["2280 amber",
-            "100 artifact chest",
-            "3 exalted artifact chest"],
+            "reward": [
+                "2280 amber",
+                "100 artifact chest",
+                "3 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Lush Island Bundle",
-            "reward": ["2520 amber",
-            "120 artifact chest",
-            "3 exalted artifact chest"],
+            "reward": [
+                "2520 amber",
+                "120 artifact chest",
+                "3 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Peculiar Mine Bundle",
-            "reward": ["2760 amber",
-            "140 artifact chest",
-            "3 exalted artifact chest"],
+            "reward": [
+                "2760 amber",
+                "140 artifact chest",
+                "3 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Wide Tunnel Bundle",
-            "reward": ["3000 amber",
-            "160 artifact chest",
-            "4 exalted artifact chest"],
+            "reward": [
+                "3000 amber",
+                "160 artifact chest",
+                "4 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Inner Sea Bundle",
-            "reward": ["3240 amber",
-            "180 artifact chest",
-            "4 exalted artifact chest"],
+            "reward": [
+                "3240 amber",
+                "180 artifact chest",
+                "4 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Agartha Bundle",
-            "reward": ["3480 amber",
-            "200 artifact chest",
-            "4 exalted artifact chest"],
+            "reward": [
+                "3480 amber",
+                "200 artifact chest",
+                "4 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Shamballa Bundle",
-            "reward": ["3720 amber",
-            "220 artifact chest",
-            "4 exalted artifact chest"],
+            "reward": [
+                "3720 amber",
+                "220 artifact chest",
+                "4 exalted artifact chest"
+            ],
             "type": "IAP"
         },
         {
             "name": "Goggles of the Prospector",
-            "reward": ["+1 layer on ore nodes"],
+            "reward": [
+                "+1 layer on ore nodes"
+            ],
             "type": "Amber"
         },
         {
             "name": "Goggles of the Lumberjack",
-            "reward": ["+1 layer on lumber nodes"],
+            "reward": [
+                "+1 layer on lumber nodes"
+            ],
             "type": "Amber"
         },
         {
             "name": "Goggles of the Hunter",
-            "reward": ["+1 layer on enemie nodes"],
+            "reward": [
+                "+1 layer on enemy nodes"
+            ],
             "type": "Amber"
         },
         {
             "name": "Big book of Ore",
-            "reward": ["+50% ore"],
+            "reward": [
+                "+50% ore"
+            ],
             "type": "Amber"
         },
         {
             "name": "Big book of Trees",
-            "reward": ["+50% lumber"],
+            "reward": [
+                "+50% lumber"
+            ],
             "type": "Amber"
         },
         {
             "name": "Big book of Enemies",
-            "reward": ["+50% leather"],
+            "reward": [
+                "+50% leather"
+            ],
             "type": "Amber"
         },
         {
             "name": "Pet combat training",
-            "reward": ["+1x pet damage per level"],
+            "reward": [
+                "+1x pet damage per level"
+            ],
             "type": "Amber"
         },
         {
             "name": "Power drill",
-            "reward": ["Autogather: +1 floor per level"],
+            "reward": [
+                "Autogather: +1 floor per level"
+            ],
             "type": "Amber"
         },
         {
             "name": "Loadouts",
-            "reward": ["+1 equipment loadout"],
+            "reward": [
+                "+1 equipment loadout"
+            ],
             "type": "Amber"
         },
         {
             "name": "Pet: Baby Maskie",
-            "reward": ["Pet: Baby Maskie"],
+            "reward": [
+                "Pet: Baby Maskie"
+            ],
             "type": "Amber"
         },
         {
             "name": "Fishing Satchel",
-            "reward": ["+10 fishing bait cap"],
+            "reward": [
+                "+10 fishing bait cap"
+            ],
             "type": "Amber"
         },
         {
             "name": "Gem Horn",
-            "reward": ["+5 mana gem on daily mine"],
+            "reward": [
+                "+5 mana gem on daily mine"
+            ],
             "type": "Amber"
         },
         {
             "name": "Meat Cleaver",
-            "reward": ["2x universal damage"],
+            "reward": [
+                "2x universal damage"
+            ],
             "type": "Amber"
         },
         {
             "name": "Nunchakus",
-            "reward": ["2x universal speed"],
+            "reward": [
+                "2x universal speed"
+            ],
             "type": "Amber"
         },
         {
             "name": "Poison Tipped Weapons",
-            "reward": ["Half guards hitpoint regeneration"],
+            "reward": [
+                "Half guards hitpoint regeneration"
+            ],
             "type": "Amber"
         },
         {
             "name": "Pet encyclopedia",
-            "reward": ["+20% pet XP"],
+            "reward": [
+                "+20% pet XP"
+            ],
             "type": "Amber"
         },
         {
             "name": "Pet: Larry",
-            "reward": ["Pet: Larry"],
+            "reward": [
+                "Pet: Larry"
+            ],
             "type": "Amber"
         },
         {
             "name": "Pet encyclopedia II",
-            "reward": ["+30% pet XP"],
+            "reward": [
+                "+30% pet XP"
+            ],
             "type": "Amber"
         },
         {
             "name": "Pet: Wanderer",
-            "reward": ["Pet: Wanderer"],
+            "reward": [
+                "Pet: Wanderer"
+            ],
             "type": "Amber"
         },
         {
             "name": "Staff of the Druid",
-            "reward": ["+25% Legendary and Mythic herbs spawn"],
+            "reward": [
+                "+25% Legendary and Mythic herbs spawn"
+            ],
             "type": "Amber"
         },
         {
             "name": "Shovel of the Druid",
-            "reward": ["+2 herb spawn"],
+            "reward": [
+                "+2 herb spawn"
+            ],
             "type": "Amber"
         },
         {
             "name": "Amber Horn",
-            "reward": ["Free chest: +2 amber"],
+            "reward": [
+                "Free chest: +2 amber"
+            ],
             "type": "Mana gem"
         },
         {
             "name": "Vibrating Wand of the Druid",
-            "reward": ["Autogather: Available herb gathering"],
+            "reward": [
+                "Autogather: Available herb gathering"
+            ],
             "type": "Mana gem"
         },
         {
             "name": "Scalpel of the Doctor",
-            "reward": ["Start daily mine at Max floor/2"],
+            "reward": [
+                "Start daily mine at Max floor/2"
+            ],
             "type": "Mana gem"
         },
         {
             "name": "Gloves of the Druid",
-            "reward": ["+50% herb gathering"],
+            "reward": [
+                "+50% herb gathering"
+            ],
             "type": "Mana gem"
         },
         {
             "name": "Goggles of the druid",
-            "reward": ["Toggle: Sense Herb speel now show herb rarity"],
+            "reward": [
+                "Toggle: Sense Herb spell now show herb rarity"
+            ],
             "type": "Mana gem"
         },
         {
             "name": "Fancy Wand of the Druid",
-            "reward": ["Toggle: Disable legendary/mythic herbs"],
+            "reward": [
+                "Toggle: Disable legendary/mythic herbs"
+            ],
             "type": "Mana gem"
         },
         {
             "name": "Fancy Goggles of the Druid",
-            "reward": ["Toggle: remove common herbs from Sense Herbs"],
+            "reward": [
+                "Toggle: remove common herbs from Sense Herbs"
+            ],
             "type": "Mana gem"
         },
         {
             "name": "Pet: Mr Rust",
-            "reward": ["Pet: Mr Rust"],
+            "reward": [
+                "Pet: Mr Rust"
+            ],
             "type": "Mana gem"
         },
         {
             "name": "Pet: Mr Robo",
-            "reward": ["Pet: Mr Robo"],
+            "reward": [
+                "Pet: Mr Robo"
+            ],
             "type": "Mana gem"
         }
     ]
-  }
+}

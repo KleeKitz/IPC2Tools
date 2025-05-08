@@ -4,7 +4,7 @@ import { handleModSelection } from "./ui/selectionManager.js";
 import { calculateValues } from "./logic/calculator.js";
 import { toggleCollapse } from "./ui/toggleCollapse.js";
 import { setupCompareToggle } from "./ui/compareToggle.js"
-import { setupExclusiveCheckboxHandling, setupCraftingModsEquippedHandling } from './ui/craftingModifersManager.js';
+import { setupExclusiveCheckboxHandling, setupCraftingModsEquippedHandling } from './ui/craftingModifiersManager.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
     await loadModifiers();
