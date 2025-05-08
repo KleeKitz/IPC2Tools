@@ -29,7 +29,11 @@ dd {
 
 select,
 option {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif !important
+}
+
+.display-options {
+    font-family: 'consolas', sans-serif !important
 }
 
 ul,
@@ -464,7 +468,7 @@ button:hover {
     gap: 8px;
 }
 
-.checkbox-group > div > p {
+.checkbox-group>div>p {
     margin: 12px 0 12px 0;
     font-weight: 700;
     font-size: 18px;
@@ -712,15 +716,17 @@ button:hover {
 }
 
 .option-box {
-    background-color: #1e1e1e; /* dark theme */
+    /* dark theme */
+    background-color: #1e1e1e;
     border-radius: 12px;
     padding: 1rem;
     text-align: center;
-    flex: 1 1 200px; /* responsive growth */
+    /* responsive growth */
+    flex: 1 1 200px;
     min-width: 160px;
     max-width: 500px;
     color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .option-box p {
@@ -744,8 +750,8 @@ button:hover {
     align-items: center;
 }
 
-#nonEnchantedSection > div,
-#enchantedSection > div {
+#nonEnchantedSection>div,
+#enchantedSection>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -753,13 +759,13 @@ button:hover {
     align-items: center;
 }
 
-#nonEnchantedSection > p,
-#enchantedSection > p {
+#nonEnchantedSection>p,
+#enchantedSection>p {
     padding: 12px 0 12px 0;
 }
 
-#nonEnchantedSection > select,
-#enchantedSection > select {
+#nonEnchantedSection>select,
+#enchantedSection>select {
     margin: 8px 0 8px 0;
 }
 
@@ -885,7 +891,10 @@ button:hover {
 .section #result {
     margin-bottom: 32px;
 }
-#prestigeOutput, #prestigeShortOutput, 
-#prestigeOutputHardMode, #prestigeShortOutputHardMode {
+
+#prestigeOutput,
+#prestigeShortOutput,
+#prestigeOutputHardMode,
+#prestigeShortOutputHardMode {
     font-family: Arial, sans-serif;
 }
