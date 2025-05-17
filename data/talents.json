@@ -1,0 +1,2299 @@
+{
+    "talents": [
+        {
+            "Y": -2,
+            "X": -1,
+            "Name": "Master Forager",
+            "Detail": "+5% chance to get 2x materials",
+            "TP Cost": 1,
+            "Tag": "2x_materials",
+            "Enabled": "FALSE",
+            "Short Name": "MF",
+            "Attributes": [
+                {
+                    "Type": "2x_materials",
+                    "Value": 5,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": -2,
+            "Name": "Master Forager",
+            "Detail": "+5% chance to get 2x materials",
+            "TP Cost": 1,
+            "Tag": "2x_materials",
+            "Enabled": "FALSE",
+            "Short Name": "MF",
+            "Attributes": [
+                {
+                    "Type": "2x_materials",
+                    "Value": 5,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": 2,
+            "Name": "Armorer",
+            "Detail": "+2 Armor",
+            "TP Cost": 1,
+            "Tag": "armor",
+            "Enabled": "FALSE",
+            "Short Name": "AR",
+            "Attributes": [
+                {
+                    "Type": "armor",
+                    "Value": 2,
+                    "Inc Type": "Flat"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": 0,
+            "Name": "Armorer",
+            "Detail": "+2 Armor",
+            "TP Cost": 1,
+            "Tag": "armor",
+            "Enabled": "FALSE",
+            "Short Name": "AR",
+            "Attributes": [
+                {
+                    "Type": "armor",
+                    "Value": 2,
+                    "Inc Type": "Flat"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": 0,
+            "Name": "Armorer",
+            "Detail": "+2 Armor",
+            "TP Cost": 1,
+            "Tag": "armor",
+            "Enabled": "FALSE",
+            "Short Name": "AR",
+            "Attributes": [
+                {
+                    "Type": "armor",
+                    "Value": 2,
+                    "Inc Type": "Flat"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": -2,
+            "Name": "Armorer",
+            "Detail": "+2 Armor",
+            "TP Cost": 1,
+            "Tag": "armor",
+            "Enabled": "FALSE",
+            "Short Name": "AR",
+            "Attributes": [
+                {
+                    "Type": "armor",
+                    "Value": 2,
+                    "Inc Type": "Flat"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": -3,
+            "Name": "Artifact Mastery",
+            "Detail": "+10% increased chances to get better Artifacts",
+            "TP Cost": 1,
+            "Tag": "artifact_rarity",
+            "Enabled": "FALSE",
+            "Short Name": "AM",
+            "Attributes": [
+                {
+                    "Type": "artifact_rarity",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": 3,
+            "Name": "Long Arms",
+            "Detail": "+10% More attack range",
+            "TP Cost": 1,
+            "Tag": "attack_range",
+            "Enabled": "FALSE",
+            "Short Name": "LA",
+            "Attributes": [
+                {
+                    "Type": "attack_range",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": 2,
+            "Name": "Quick Hands",
+            "Detail": "+10% All swinging speeds",
+            "TP Cost": 1,
+            "Tag": "attack_speed",
+            "Enabled": "FALSE",
+            "Short Name": "QH",
+            "Attributes": [
+                {
+                    "Type": "attack_speed",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": 1,
+            "Name": "Quick Hands",
+            "Detail": "+10% All swinging speeds",
+            "TP Cost": 1,
+            "Tag": "attack_speed",
+            "Enabled": "FALSE",
+            "Short Name": "QH",
+            "Attributes": [
+                {
+                    "Type": "attack_speed",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": 1,
+            "Name": "Spot Weak Spots",
+            "Detail": "10% Crit Chance",
+            "TP Cost": 1,
+            "Tag": "crit_chance",
+            "Enabled": "FALSE",
+            "Short Name": "SW",
+            "Attributes": [
+                {
+                    "Type": "crit_chance",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": 1,
+            "Name": "Spot Weak Spots",
+            "Detail": "10% Crit Chance",
+            "TP Cost": 1,
+            "Tag": "crit_chance",
+            "Enabled": "FALSE",
+            "Short Name": "SW",
+            "Attributes": [
+                {
+                    "Type": "crit_chance",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": -2,
+            "Name": "Spot Valuables",
+            "Detail": "10% Crit income chance",
+            "TP Cost": 1,
+            "Tag": "crit_income_chance",
+            "Enabled": "FALSE",
+            "Short Name": "SV",
+            "Attributes": [
+                {
+                    "Type": "crit_income_chance",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": -2,
+            "Name": "Spot Valuables",
+            "Detail": "10% Crit income chance",
+            "TP Cost": 1,
+            "Tag": "crit_income_chance",
+            "Enabled": "FALSE",
+            "Short Name": "SV",
+            "Attributes": [
+                {
+                    "Type": "crit_income_chance",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": 3,
+            "Name": "Daily Mine Expert",
+            "Detail": "+20% More damage in Daily Mine",
+            "TP Cost": 1,
+            "Tag": "daily_mine_damage",
+            "Enabled": "FALSE",
+            "Short Name": "DME",
+            "Attributes": [
+                {
+                    "Type": "daily_mine_damage",
+                    "Value": 20,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": -3,
+            "Name": "Crafter",
+            "Detail": "20% better base stats for new equipments",
+            "TP Cost": 1,
+            "Tag": "equipment_stats",
+            "Enabled": "FALSE",
+            "Short Name": "CR",
+            "Attributes": [
+                {
+                    "Type": "equipment_stats",
+                    "Value": 20,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": 0,
+            "Name": "Experienced",
+            "Detail": "+10 More experience",
+            "TP Cost": 1,
+            "Tag": "experience",
+            "Enabled": "FALSE",
+            "Short Name": "XP",
+            "Attributes": [
+                {
+                    "Type": "experience",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": 0,
+            "Name": "Experienced",
+            "Detail": "+10 More experience",
+            "TP Cost": 1,
+            "Tag": "experience",
+            "Enabled": "FALSE",
+            "Short Name": "XP",
+            "Attributes": [
+                {
+                    "Type": "experience",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": -1,
+            "Name": "Forager",
+            "Detail": "5% better chance to find materials",
+            "TP Cost": 1,
+            "Tag": "find_materials",
+            "Enabled": "FALSE",
+            "Short Name": "FG",
+            "Attributes": [
+                {
+                    "Type": "find_materials",
+                    "Value": 5,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": -1,
+            "Name": "Forager",
+            "Detail": "5% better chance to find materials",
+            "TP Cost": 1,
+            "Tag": "find_materials",
+            "Enabled": "FALSE",
+            "Short Name": "FG",
+            "Attributes": [
+                {
+                    "Type": "find_materials",
+                    "Value": 5,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": -3,
+            "Name": "Forager",
+            "Detail": "5% better chance to find materials",
+            "TP Cost": 1,
+            "Tag": "find_materials",
+            "Enabled": "FALSE",
+            "Short Name": "FG",
+            "Attributes": [
+                {
+                    "Type": "find_materials",
+                    "Value": 5,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": -4,
+            "Name": "Amber Looter",
+            "Detail": "+1 more Amber from Free Chest",
+            "TP Cost": 1,
+            "Tag": "free_chest_amber",
+            "Enabled": "FALSE",
+            "Short Name": "AL",
+            "Attributes": [
+                {
+                    "Type": "free_chest_amber",
+                    "Value": 1,
+                    "Inc Type": "Flat"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": -3,
+            "Name": "Free Coins",
+            "Detail": "Trading earns 10% more coins",
+            "TP Cost": 1,
+            "Tag": "free_coins",
+            "Enabled": "FALSE",
+            "Short Name": "FC",
+            "Attributes": [
+                {
+                    "Type": "free_coins",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": -3,
+            "Name": "Free Coins",
+            "Detail": "Trading earns 10% more coins",
+            "TP Cost": 1,
+            "Tag": "free_coins",
+            "Enabled": "FALSE",
+            "Short Name": "FC",
+            "Attributes": [
+                {
+                    "Type": "free_coins",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": -2,
+            "Name": "Crafting Expertise",
+            "Detail": "+%5 free craft chance",
+            "TP Cost": 1,
+            "Tag": "free_craft_chance",
+            "Enabled": "FALSE",
+            "Short Name": "CE",
+            "Attributes": [
+                {
+                    "Type": "free_craft_chance",
+                    "Value": 5,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": -2,
+            "Name": "Crafting Expertise",
+            "Detail": "+%5 free craft chance",
+            "TP Cost": 1,
+            "Tag": "free_craft_chance",
+            "Enabled": "FALSE",
+            "Short Name": "CE",
+            "Attributes": [
+                {
+                    "Type": "free_craft_chance",
+                    "Value": 5,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": -3,
+            "Name": "Crafting Expertise",
+            "Detail": "+%5 free craft chance",
+            "TP Cost": 1,
+            "Tag": "free_craft_chance",
+            "Enabled": "FALSE",
+            "Short Name": "CE",
+            "Attributes": [
+                {
+                    "Type": "free_craft_chance",
+                    "Value": 5,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": 3,
+            "Name": "Guard Beater",
+            "Detail": "+10% Damage against guards",
+            "TP Cost": 1,
+            "Tag": "guard_damage",
+            "Enabled": "FALSE",
+            "Short Name": "GB",
+            "Attributes": [
+                {
+                    "Type": "guard_damage",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": 2,
+            "Name": "Guard Beater",
+            "Detail": "+10% Damage against guards",
+            "TP Cost": 1,
+            "Tag": "guard_damage",
+            "Enabled": "FALSE",
+            "Short Name": "GB",
+            "Attributes": [
+                {
+                    "Type": "guard_damage",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": 3,
+            "Name": "Wizard",
+            "Detail": "+15% faster mana regen",
+            "TP Cost": 1,
+            "Tag": "mana_regen",
+            "Enabled": "FALSE",
+            "Short Name": "WZ",
+            "Attributes": [
+                {
+                    "Type": "mana_regen",
+                    "Value": 15,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": 0,
+            "Name": "Wizard",
+            "Detail": "+15% faster mana regen",
+            "TP Cost": 1,
+            "Tag": "mana_regen",
+            "Enabled": "FALSE",
+            "Short Name": "WZ",
+            "Attributes": [
+                {
+                    "Type": "mana_regen",
+                    "Value": 15,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": 0,
+            "Name": "Wizard",
+            "Detail": "+15% faster mana regen",
+            "TP Cost": 1,
+            "Tag": "mana_regen",
+            "Enabled": "FALSE",
+            "Short Name": "WZ",
+            "Attributes": [
+                {
+                    "Type": "mana_regen",
+                    "Value": 15,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": -3,
+            "Name": "Wizard",
+            "Detail": "+15% faster mana regen",
+            "TP Cost": 1,
+            "Tag": "mana_regen",
+            "Enabled": "FALSE",
+            "Short Name": "WZ",
+            "Attributes": [
+                {
+                    "Type": "mana_regen",
+                    "Value": 15,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": -1,
+            "Name": "Looter",
+            "Detail": "+10% More ores, lumber and leather",
+            "TP Cost": 1,
+            "Tag": "more_ore_lumber_leather",
+            "Enabled": "FALSE",
+            "Short Name": "LO",
+            "Attributes": [
+                {
+                    "Type": "more_ore_lumber_leather",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": 7,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": 7,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": 7,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": 6,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": 6,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": 6,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": 5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": 5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": 5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": 5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": 5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": 5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": 5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": 4,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": 4,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": 4,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": 4,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": 4,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": 2,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": 2,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": 1,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": 1,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": 0,
+            "Name": "Class Specific",
+            "Detail": "A class specific talent",
+            "TP Cost": 1,
+            "Tag": "class_specific",
+            "Enabled": "FALSE",
+            "Short Name": "SP",
+            "Attributes": [
+                {
+                    "Type": "class_specific",
+                    "Value": 0,
+                    "Inc Type": "N/A"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": 0,
+            "Name": "PC",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": 0,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": -1,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": -1,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": -2,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": -2,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": -4,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": -4,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": -4,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": -4,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": -4,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": -5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": -5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": -5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": -5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": -5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": -5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": -5,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": -6,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": -6,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": -6,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": -7,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": -7,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": -7,
+            "Name": "BLANK",
+            "Detail": "N/A",
+            "TP Cost": 0,
+            "Tag": "N/A",
+            "Enabled": "FALSE",
+            "Short Name": "N/A",
+            "Attributes": [
+                {
+                    "Type": "NULL",
+                    "Value": 0,
+                    "Inc Type": "NULL"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": -4,
+            "Name": "Retirement Guru",
+            "Detail": "+10% more Prestige Currency",
+            "TP Cost": 1,
+            "Tag": "prestige_currency",
+            "Enabled": "FALSE",
+            "Short Name": "RG",
+            "Attributes": [
+                {
+                    "Type": "prestige_currency",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": 3,
+            "Name": "Gatherer",
+            "Detail": "+10% More damage against resources",
+            "TP Cost": 1,
+            "Tag": "resource_damage",
+            "Enabled": "FALSE",
+            "Short Name": "GT",
+            "Attributes": [
+                {
+                    "Type": "resource_damage",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": 2,
+            "Name": "Gatherer",
+            "Detail": "+10% More damage against resources",
+            "TP Cost": 1,
+            "Tag": "resource_damage",
+            "Enabled": "FALSE",
+            "Short Name": "GT",
+            "Attributes": [
+                {
+                    "Type": "resource_damage",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": 7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": 7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": 7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": 7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": 7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": 7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": 6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": 6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": 6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": 6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": 6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": 6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": 5,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": 5,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": 4,
+            "Name": "Daily Gem?",
+            "Detail": "TODO",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": 4,
+            "Name": "Daily Timer",
+            "Detail": "TODO",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": 4,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": 4,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": 3,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": 3,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": 3,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": 3,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": 2,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": 2,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": 2,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -1,
+            "X": 1,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": 1,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": 1,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": -3,
+            "Name": "Monthly Currency?",
+            "Detail": "TODO",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": -4,
+            "Name": "Monthly XP?",
+            "Detail": "TODO",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": -4,
+            "Name": "Monthly Currency?",
+            "Detail": "TODO",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": -5,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": -5,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": -6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": -6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": -6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": -6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": -6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": -6,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 4,
+            "X": -7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": -7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": -7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -2,
+            "X": -7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -3,
+            "X": -7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": -4,
+            "X": -7,
+            "Name": "?",
+            "Detail": "?",
+            "TP Cost": 1,
+            "Tag": "TODO",
+            "Enabled": "FALSE",
+            "Short Name": "?",
+            "Attributes": [
+                {
+                    "Type": "TODO",
+                    "Value": 0,
+                    "Inc Type": "TODO"
+                }
+            ]
+        },
+        {
+            "Y": 3,
+            "X": -1,
+            "Name": "Silver Tongue",
+            "Detail": "+10% All trade power",
+            "TP Cost": 1,
+            "Tag": "trade_power",
+            "Enabled": "FALSE",
+            "Short Name": "ST",
+            "Attributes": [
+                {
+                    "Type": "trade_power",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": -3,
+            "Name": "Silver Tongue",
+            "Detail": "+10% All trade power",
+            "TP Cost": 1,
+            "Tag": "trade_power",
+            "Enabled": "FALSE",
+            "Short Name": "ST",
+            "Attributes": [
+                {
+                    "Type": "trade_power",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 2,
+            "X": -1,
+            "Name": "Quick Trader",
+            "Detail": "+10% trading speed",
+            "TP Cost": 1,
+            "Tag": "trade_speed",
+            "Enabled": "FALSE",
+            "Short Name": "QT",
+            "Attributes": [
+                {
+                    "Type": "trade_speed",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 1,
+            "X": -2,
+            "Name": "Quick Trader",
+            "Detail": "+10% trading speed",
+            "TP Cost": 1,
+            "Tag": "trade_speed",
+            "Enabled": "FALSE",
+            "Short Name": "QT",
+            "Attributes": [
+                {
+                    "Type": "trade_speed",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": 1,
+            "Name": "Runner",
+            "Detail": "10% Increased walking speed",
+            "TP Cost": 1,
+            "Tag": "walking_speed",
+            "Enabled": "FALSE",
+            "Short Name": "RU",
+            "Attributes": [
+                {
+                    "Type": "walking_speed",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        },
+        {
+            "Y": 0,
+            "X": -1,
+            "Name": "Runner",
+            "Detail": "10% Increased walking speed",
+            "TP Cost": 1,
+            "Tag": "walking_speed",
+            "Enabled": "FALSE",
+            "Short Name": "RU",
+            "Attributes": [
+                {
+                    "Type": "walking_speed",
+                    "Value": 10,
+                    "Inc Type": "Percent"
+                }
+            ]
+        }
+    ]
+}

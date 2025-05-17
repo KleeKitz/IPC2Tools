@@ -1,0 +1,86 @@
+{
+    "characters": [
+        {
+            "town_dweller": {
+                "display_name": "Town Dweller",
+                "unique_talent": {
+                    "name": "???",
+                    "detail": "+1 confusion"
+                },
+                "active_skill": "None",
+                "passive_skills": [
+                    {
+                        "level": 20,
+                        "detail": "5% more resources"
+                    },
+                    {
+                        "level": 40,
+                        "detail": "10% more resources"
+                    }
+                ],
+                "amber_cost": 0
+            }
+        },
+        {
+            "ninja": {
+                "display_name": "Ninja",
+                "unique_talent": {
+                    "name": "Ninja Power",
+                    "detail": "+15% All swinging speeds"
+                },
+                "active_skill": "+20% Attack Speed",
+                "passive_skills": [
+                    {
+                        "level": 20,
+                        "detail": "3% Crit Chance"
+                    },
+                    {
+                        "level": 40,
+                        "detail": "7% Crit Chance"
+                    }
+                ],
+                "amber_cost": 1000
+            }
+        },
+        {
+            "knight": {
+                "display_name": "Knight"
+            }
+        },
+        {
+            "guru": {
+                "display_name": "Guru"
+            }
+        },
+        {
+            "warlock": {
+                "display_name": "Warlock"
+            }
+        },
+        {
+            "warrior": {
+                "display_name": "Warrior"
+            }
+        },
+        {
+            "druid": {
+                "display_name": "Druid"
+            }
+        },
+        {
+            "chronomaster": {
+                "display_name": "Chronomaster"
+            }
+        },
+        {
+            "fisherman": {
+                "display_name": "Fisherman"
+            }
+        },
+        {
+            "merchant": {
+                "display_name": "Merchant"
+            }
+        }
+    ]
+}

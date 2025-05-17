@@ -34,13 +34,15 @@
             </div>
             <ul id="calculators" class="sidebar-section">
                 <li>
-                    <a href="./modsCalculator.html" class="nav-link" title="Mods Calculator" data-tooltip="Mods Calculator">
+                    <a href="./modsCalculator.html" class="nav-link" title="Mods Calculator"
+                        data-tooltip="Mods Calculator">
                         <span class="icon">📊</span>
                         <span class="label">Modifiers</span>
                     </a>
                 </li>
                 <li>
-                    <a href="./prestigeCalculator.html" class="nav-link" title="Prestige Calculator" data-tooltip="Prestige Calculator">
+                    <a href="./prestigeCalculator.html" class="nav-link" title="Prestige Calculator"
+                        data-tooltip="Prestige Calculator">
                         <span class="icon">💎</span>
                         <span class="label">Prestige</span>
                     </a>
@@ -62,6 +64,12 @@
                     </a>
                 </li>
             </ul>
+            <li>
+                <a href="./talentViewer.html" class="nav-link" title="Talents" data-tooltip="Talents">
+                    <span class="icon">🌟</span>
+                    <span class="label">Talents</span>
+                </a>
+            </li>
         </div>
     </aside>
 
@@ -69,12 +77,14 @@
     <div class="container">
         <h2>Prestige Calculator</h2>
         <div class="section">
-    
+
             <!-- Prestige Percentage Input -->
             <form id="prestige-form">
                 <label for="prestigePercentage">Prestige %</label>
-                <input type="number" id="prestigePercentage" name="prestigePercentage" step="0.01" min="0" placeholder="e.g., 1250.75">
-                <p class="info-text">To obtain the percentage you have to head into: <br> Misc &gt; Stats &gt; Prestige</p>
+                <input type="number" id="prestigePercentage" name="prestigePercentage" step="0.01" min="0"
+                    placeholder="e.g., 1250.75">
+                <p class="info-text">To obtain the percentage you have to head into: <br> Misc &gt; Stats &gt; Prestige
+                </p>
             </form>
         </div>
         <div class="section form-list">
@@ -83,25 +93,25 @@
             <form id="upgrade-form">
                 <label for="universalSpeed">Universal Speed</label>
                 <input type="number" id="universalSpeed" name="universalSpeed" min="0">
-    
+
                 <label for="universalDamage">Universal Damage</label>
                 <input type="number" id="universalDamage" name="universalDamage" min="0">
-    
+
                 <label for="pickaxeHandling">Pickaxe Handling</label>
                 <input type="number" id="pickaxeHandling" name="pickaxeHandling" min="0">
-    
+
                 <label for="oreKnowledge">Ore Knowledge</label>
                 <input type="number" id="oreKnowledge" name="oreKnowledge" min="0">
-    
+
                 <label for="axeHandling">Axe Handling</label>
                 <input type="number" id="axeHandling" name="axeHandling" min="0">
-    
+
                 <label for="lumberKnowledge">Lumber Knowledge</label>
                 <input type="number" id="lumberKnowledge" name="lumberKnowledge" min="0">
-    
+
                 <label for="swordHandling">Sword Handling</label>
                 <input type="number" id="swordHandling" name="swordHandling" min="0">
-    
+
                 <label for="enemyKnowledge">Enemy Knowledge</label>
                 <input type="number" id="enemyKnowledge" name="enemyKnowledge" min="0">
             </form>
@@ -111,7 +121,7 @@
                 <h2>Total prestige gain</h2>
                 <p id="prestigeShortOutput">-Result-</p>
                 <p id="prestigeOutput">-Result-</p>
-            </div>            
+            </div>
 
             <div id="result-hardmode">
                 <h2>Prestige gain in hard mode</h2>

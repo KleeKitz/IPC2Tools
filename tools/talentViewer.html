@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Pocket Crafter 2 Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="module" src="../js/main/main.js" defer></script>
+    <script type="module" src="../js/talentViewer/index.js" defer></script>
+</head>
+
+
+<body>
+    <!-- Mainbar-->
+    <header class="mainbar">
+        <!-- Toggle -->
+        <button class="pixel-button" id="sidebarToggle" title="Toggle Menu">
+            🛠
+        </button>
+        <a href="/">
+            <h1>Idle Pocket Crafter 2 Tools</h1>
+        </a>
+        <span class="version">Version: 0.1</span>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <!-- Index -->
+        <div class="sidebar-group">
+            <div id="index-header" class="sidebar-header" title="Index" data-tooltip="Calculators">
+                <span class="icon">⛏</span>
+                <span class="label">Index</span>
+            </div>
+        </div>
+        <!-- Calculators Section -->
+        <div class="sidebar-group">
+            <div id="calculators-header" class="sidebar-header" title="Calculators" data-tooltip="Calculators">
+                <span class="icon">🧮</span>
+                <span class="label">Calculators <span class="arrow">▶</span></span>
+            </div>
+            <ul id="calculators" class="sidebar-section">
+                <li>
+                    <a href="./modsCalculator.html" class="nav-link" title="Mods Calculator"
+                        data-tooltip="Mods Calculator">
+                        <span class="icon">📊</span>
+                        <span class="label">Modifiers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./prestigeCalculator.html" class="nav-link" title="Prestige Calculator"
+                        data-tooltip="Prestige Calculator">
+                        <span class="icon">💎</span>
+                        <span class="label">Prestige</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Resources Section -->
+        <div class="sidebar-group">
+            <div id="resources-header" class="sidebar-header" title="Resources" data-tooltip="Resources">
+                <span class="icon">📚</span>
+                <span class="label">Resources <span class="arrow">▶</span></span>
+            </div>
+            <ul id="resources" class="sidebar-section">
+                <li>
+                    <a href="#" class="nav-link" title="Placeholder" data-tooltip="Placeholder">
+                        <span class="icon">📄</span>
+                        <span class="label">Placeholder</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./talentViewer.html" class="nav-link" title="Talents" data-tooltip="Talents">
+                        <span class="icon">🌟</span>
+                        <span class="label">Talents</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+
+
+    <div class="container">
+        <h2>Talent Viewer</h2>
+
+        <div class="section">
+            <!-- Class Input -->
+            <p class="info-text">Choose the character you want to see the talent at the top for.</p>
+            <form id="class-form">
+                <label for="class">Character Class
+                    <select name="characters" id="characters" form="class-form"></select>
+            </form>
+        </div>
+
+        <div class="section">
+            <div id="selected-talent" style="border: 2px solid black; align-items: start;">
+                <p id="talent-name">Talent Name</p>
+                <p id="talent-detail">Talent Detail</p>
+                <p id="talent-cost">Cost: 0</p>
+                <p>Enabled?</p>
+                <p id="talent-enabled">No</p>
+            </div>
+        </div>
+
+        <!--
+        <div class="section">
+            <div id="talent-map" class="grid-container">
+
+            </div>
+        </div>
+        -->
+        <div class="section">
+            <canvas style="border: 1px solid blue;" width="1200" height="500" id="myCanvas"></canvas>
+        </div>
+
+        <div class="section">
+            <table class="table" id="total-table">
+                <thead>
+                    <th>
+                        Attribute
+                    </th>
+                    <th>
+                        Value
+                    </th>
+                </thead>
+                <tbody id="attribute-table-body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

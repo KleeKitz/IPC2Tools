@@ -464,7 +464,7 @@ button:hover {
     gap: 8px;
 }
 
-.checkbox-group > div > p {
+.checkbox-group>div>p {
     margin: 12px 0 12px 0;
     font-weight: 700;
     font-size: 18px;
@@ -712,15 +712,17 @@ button:hover {
 }
 
 .option-box {
-    background-color: #1e1e1e; /* dark theme */
+    background-color: #1e1e1e;
+    /* dark theme */
     border-radius: 12px;
     padding: 1rem;
     text-align: center;
-    flex: 1 1 200px; /* responsive growth */
+    flex: 1 1 200px;
+    /* responsive growth */
     min-width: 160px;
     max-width: 500px;
     color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .option-box p {
@@ -744,8 +746,8 @@ button:hover {
     align-items: center;
 }
 
-#nonEnchantedSection > div,
-#enchantedSection > div {
+#nonEnchantedSection>div,
+#enchantedSection>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -753,13 +755,13 @@ button:hover {
     align-items: center;
 }
 
-#nonEnchantedSection > p,
-#enchantedSection > p {
+#nonEnchantedSection>p,
+#enchantedSection>p {
     padding: 12px 0 12px 0;
 }
 
-#nonEnchantedSection > select,
-#enchantedSection > select {
+#nonEnchantedSection>select,
+#enchantedSection>select {
     margin: 8px 0 8px 0;
 }
 
@@ -775,6 +777,93 @@ button:hover {
     border-radius: 4px;
     padding: 5px;
     margin-top: 5px;
+}
+
+/* --- Attribute Toggle Buttons (bottom row) --- */
+.attribute-toggle-btn {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 16px;
+    background-color: #222;
+    color: #fdc836;
+    border: 2px solid #c9aa2d;
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin: 0 2px 8px 2px;
+    box-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 0 0 4px #e0c341;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    outline: none;
+    min-width: 120px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.attribute-toggle-btn:hover,
+.attribute-toggle-btn:focus {
+    background-color: #3b3b3b;
+    color: #fff5cc;
+    box-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 0 0 10px #fdc836;
+}
+
+.attribute-toggle-btn:active {
+    background-color: #111;
+    color: #ffe674;
+    box-shadow: 0 0 4px #c9aa2d inset;
+    transform: translateY(1px);
+}
+
+/* --- Talent Hover Modal --- */
+.talent-modal {
+    font-family: 'Pixelify Sans', sans-serif;
+    background: #23221e;
+    color: #ffe674;
+    border: 2px solid #c9aa2d;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 2px #000a, 0 0 0 2px #e0c34144;
+    padding: 14px 20px;
+    position: fixed;
+    font-size: 16px;
+    z-index: 1000;
+    min-width: 200px;
+    max-width: 320px;
+    pointer-events: none;
+    transition: background 0.2s, color 0.2s;
+    display: none;
+}
+
+/* --- Top Canvas Buttons --- */
+.canvas-util-btn {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 16px;
+    background-color: #222;
+    color: #fdc836;
+    border: 2px solid #c9aa2d;
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin: 0 2px 8px 2px;
+    box-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 0 0 4px #e0c341;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    outline: none;
+    min-width: 120px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.canvas-util-btn:hover,
+.canvas-util-btn:focus {
+    background-color: #3b3b3b;
+    color: #fff5cc;
+    box-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 0 0 10px #fdc836;
+}
+
+.canvas-util-btn:active {
+    background-color: #111;
+    color: #ffe674;
+    box-shadow: 0 0 4px #c9aa2d inset;
+    transform: translateY(1px);
 }
 
 /* =======================================
@@ -885,7 +974,50 @@ button:hover {
 .section #result {
     margin-bottom: 32px;
 }
-#prestigeOutput, #prestigeShortOutput, 
-#prestigeOutputHardMode, #prestigeShortOutputHardMode {
+
+#prestigeOutput,
+#prestigeShortOutput,
+#prestigeOutputHardMode,
+#prestigeShortOutputHardMode {
     font-family: Arial, sans-serif;
+}
+
+/* talents */
+
+/* Basic Table Styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #545454;
+}
+
+tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+/* Styling the table caption */
+caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
